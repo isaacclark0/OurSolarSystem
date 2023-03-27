@@ -1,14 +1,30 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
+import {Planet} from '../components/Planet'
 
 export default function Home() {
   return (
     <>
-      <h1>The Solar System</h1>
+      <Head>
+        <title>Solar System</title>
+        <meta name="description" content="Quckathon planet challenge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
+{/* EXAMPLE */}
+      <container>
+      <Planet planet="mars" />
+      <Planet planet="earth" />
+      <Planet planet="mercury" />
+      <Planet planet="venus" />
+      <Planet planet="jupiter" />
+      <Planet planet="saturn" />
+      <Planet planet="uranus" />
+      <Planet planet="neptune" />
+      <Planet planet="pluto" />
+      </container>
+{/* EXAMPLE */}
+
     </>
   )
 }
