@@ -1,6 +1,3 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
 generator client {
   provider = "prisma-client-js"
 }
@@ -8,4 +5,38 @@ generator client {
 datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
+}
+
+model planets {
+  id              Int                 @id @default(autoincrement())
+  core            String?             @db.VarChar(255)
+  distanceFromSun Float?
+  planetName      String?             @db.VarChar(255)
+  planetSize      Float?
+  planetType      planets_planetType?
+  facts           facts[]
+  moons           moons[]
+}
+
+model facts {
+  id       Int      @id @default(autoincrement())
+  fact     String?
+  planetid Int?
+  planets  planets? @relation(fields: [planetid], references: [id], onDelete: NoAction, onUpdate: NoAction)
+}
+
+model moons {
+  id          Int      @id @default(autoincrement())
+  moonname    String?  @db.VarChar(255)
+  moonsize    Float?
+  moonhistory String?
+  planetid    Int?
+  planets     planets? @relation(fields: [planetid], references: [id], onDelete: NoAction, onUpdate: NoAction)
+}
+
+enum planets_planetType {
+  Dwarf
+  InnerRocky
+  GasGiant
+  IceGiant
 }
