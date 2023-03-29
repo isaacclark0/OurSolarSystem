@@ -5,8 +5,8 @@ margin:30px;
 .mars {
   filter: blur(1px);
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   background-color: #ff5733;
   box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 255, 255, 0.5);
@@ -15,8 +15,8 @@ margin:30px;
 
 .earth {
   overflow:hidden;
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   background-color: #0099cc;
   position: relative;
@@ -26,8 +26,8 @@ margin:30px;
   filter: blur(1px);
   overflow: hidden;
   background-color: #d4d4d4;
-  width: 190px;
-  height: 190px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   position: relative;
   border: 10px solid #d4d4d4;
@@ -35,8 +35,8 @@ margin:30px;
 
 .venus {
   filter: blur(1px);
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   background-color: #ffc0cb;
   box-shadow: 0 0 20px #ffc0cb;
@@ -44,8 +44,8 @@ margin:30px;
 
 .jupiter {
   filter: blur(1px);
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   background: radial-gradient(circle, #f7d28c 0%, #d2853f 50%, #7e4c18 100%);
   box-shadow: inset 0 0 20px rgba(0,0,0,0.2), 0 0 50px rgba(0,0,0,0.4);
@@ -53,8 +53,8 @@ margin:30px;
 
 .saturn {
   filter: blur(1px);
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   background-color: #d1a456; 
 }
@@ -62,8 +62,8 @@ margin:30px;
 .uranus {
   filter: blur(1px);
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   background-color: #84d7ff;
   overflow: hidden;
@@ -71,8 +71,8 @@ margin:30px;
 
 .neptune {
   filter: blur(1px);
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   background-color: #1b3c8a;
   position: relative;
@@ -81,8 +81,8 @@ margin:30px;
 
 .pluto {
   filter: blur(1px);
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   background-color: #9f8a7d;
   box-shadow: 0 0 30px rgba(0,0,0,0.5);
@@ -102,21 +102,21 @@ margin:30px;
 }
 
 .ring {
-  width: 270px;
+  width: 135px;
   height: 20px;
   border-radius: 10px;
   background-color: #76716e;
   position: absolute;
-  top: 50%;
-  left: -30px;
+  top: 42px;
+  left: -17px;
   transform: rotate(-30deg);
   z-index: 2;
 }
 
 .crater {
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   border: 1px solid #1616163a;
   border-radius: 50%;
   background-color: #f3390f67;
@@ -124,40 +124,41 @@ margin:30px;
 }
 
 .crater:nth-child(1) {
-  top: 80px;
-  left: 60px;
+  top: 40px;
+  left: 30px;
 }
 
 .crater:nth-child(2) {
-  width: 40px;
-  height: 40px;
-  top: 55px;
-  left: 130px;
+  width: 20px;
+  height: 20px;
+  top: 27.5px;
+  left: 65px;
 }
 
 .crater:nth-child(3) {
-  width: 10px;
-  height: 10px;
-  top: 140px;
-  left: 80px;
+  width: 5px;
+  height: 5px;
+  top: 70px;
+  left: 40px;
 }
 
 .northamerica {
-  width: 80px;
-  height: 80px;
+  width: 65px;
+  height: 40px;
   border-radius: 50%;
   background-color: transparent;
   border-top: 40px solid #006e12;
   border-left: 25px solid transparent;
   border-right: 25px solid transparent;
   position: absolute;
-  top: 15%;
-  transform: rotate(28deg);
+  top: 15px;
+  left:8px;
+  transform: rotate(20deg);
 }
 
 .southamerica {
-  width: 100px;
-  height: 70px;
+  width: 80px;
+  height: 40px;
   border-radius: 50%;
   background-color: transparent;
   border-top: 45px solid #006e12;
@@ -165,22 +166,22 @@ margin:30px;
   border-right: 28px solid transparent;
   position: absolute;
   top: 20%;
-  left: 40%;
-  transform: rotate(100deg);
+  left: 60%;
+  transform: rotate(-100deg);
 }
 
 .centralamerica {
-  width: 100px;
-  height: 70px;
+  width: 50px;
+  height: 35px;
   border-radius: 50%;
   background-color: transparent;
-  border-top: 45px solid #006e12;
+  border-top: 25px solid #006e12;
   border-left: 28px solid transparent;
   border-right: 28px solid transparent;
   position: absolute;
-  top: 20%;
+  top: 50px;
   left: 15%;
-  transform: rotate(-90deg);
+  transform: rotate(-98deg);
 }
 
 
