@@ -10,9 +10,9 @@ datasource db {
 model planets {
   id              Int                 @id @default(autoincrement())
   core            String?             @db.VarChar(255)
-  distanceFromSun Float?
+  distanceFromSunMi Float?
   planetName      String?             @db.VarChar(255)
-  planetSize      Float?
+  planetRadiusMi  Float?
   planetType      planets_planetType?
   facts           facts[]
   moons           moons[]
@@ -28,7 +28,7 @@ model facts {
 model moons {
   id          Int      @id @default(autoincrement())
   moonname    String?  @db.VarChar(255)
-  moonsize    Float?
+  moonRadiusMi    Float?
   moonhistory String?
   planetid    Int?
   planets     planets? @relation(fields: [planetid], references: [id], onDelete: NoAction, onUpdate: NoAction)
