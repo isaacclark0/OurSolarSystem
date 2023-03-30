@@ -4,11 +4,10 @@ import { useRouter } from 'next/router'
 import React, {useState, useMemo} from 'react'
 import Link from "next/link"
 
-export default function planet({path}) {
+export default function planet({}) {
 
   const router = useRouter()
  
-
   const {planet} = router.query
   const [data, setData] = useState(null);
   
@@ -23,10 +22,10 @@ export default function planet({path}) {
     <>
     <div className="moonb">
       {data?.result?.moons.length == 0 ? null :
-      <div className="moonButton" onClick={()=>path}>
+      <Link href={`/planet/${planet}/moon-info`} className="moonButton">
         {data?.result?.moons.length > 1 ? 'Moons ' : 'Moon '}
-        <div className="rightArrButton"> &gt;</div>
-      </div>} 
+        <div className="rightArrButton"> &nbsp;&gt;</div>
+      </Link>} 
     </div>
       <div className="container">
         <Planet planet={planet} />

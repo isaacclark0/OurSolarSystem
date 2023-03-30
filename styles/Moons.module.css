@@ -1,0 +1,31 @@
+.moonContainer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+      display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    min-height: 86vh;
+  }
+  .moonCard{
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    height: 370px;
+    border-radius: 40px;
+    padding: 8px;
+    align-items: center;
+    justify-content: center;
+    font-family: pixelz;
+  }
+  .moonCard:hover {
+    cursor: pointer;
+    
+  }
+  .moonImg{
+    width: 220px;
+  }
