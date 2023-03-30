@@ -26,9 +26,9 @@
     }
 
 html, body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  position: absolute;
+  height:100%;
+  width:100%;
 	margin: 0;
 	padding: 0;
 	overflow-x: hidden;
@@ -57,12 +57,12 @@ html, body {
   }
 
 .container {
-  height: calc(100vh - 100px);
-	padding-top:60px;
+	padding-top:20px;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
 	align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 .star,
@@ -178,6 +178,7 @@ animation-fill-mode: forwards;
 }
 
 .footerContainer {
+  margin-bottom:auto;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -192,10 +193,4 @@ animation-fill-mode: forwards;
   font-family: prof;
   display: flex;
   flex: 1 0;
-}
-
-.hackyExpander{
-  display: flex;
-  align-items: stretch;
-  flex: 1;
 }

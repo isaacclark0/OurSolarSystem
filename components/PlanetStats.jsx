@@ -7,7 +7,6 @@ export const PlanetStats = ({planet, data}) => {
     <h2>{planet}</h2>
     <div className={styles.planetInfo}>
 
-        {/* <hr className="measurement"/> (Calculate With Radius) */}
         <h4>Radius: {data?.result?.planetRadiusMi.toLocaleString()} Miles</h4>
 
         <h4>Planet Type: {data?.result?.planetType === 'InnerRocky' ? 'Inner Rocky' :
@@ -25,7 +24,7 @@ export const PlanetStats = ({planet, data}) => {
             </div>
         ))}
     </div>
-    
+
     {/*Moons
     <div className={styles.row}>
         {data?.result?.moons.map(b => (
