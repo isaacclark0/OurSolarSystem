@@ -1,0 +1,50 @@
+.planet h2{
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 30px;
+  margin-bottom: 40px;
+	font-size:x-large;
+	text-align: center;
+	color: white
+  }
+  
+  .planetInfo {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin-top: 2rem;
+  }
+
+  .planetInfo h4 {
+	margin:15px;
+	text-align: center;
+	min-width: 420px;
+  }
+  
+  .row {
+	margin-top:20px;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	padding: 20px 4px;
+	border: 0px solid white;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+	min-width: 420px;
+	padding: 20px 4px;
+	margin-top:20px;
+	border: 1px solid rgba(255, 255, 255, 0.151);
+  }
+  
+  
+  
+  hr.measurement {
+	border-color: black;
+	border-top: 1px dashed red;
+	/* border-left-: 10px red; */
+	width: 12rem;
+	margin: 0 auto;
+	margin-top: 2rem ;
+  }
