@@ -9,9 +9,14 @@ export const PlanetStats = ({planet, data}) => {
 
     <div className={styles.planetInfo}>
         {/* <hr className="measurement"/> (Calculate With Radius) */}
-        <h4>Radius: {data?.result?.planetRadiusMi} Miles</h4>
-        <h4>Core: {data?.result?.planetType}</h4>
-        <h4>Distance from Sun: {data?.result?.distanceFromSunMi} Miles</h4>
+        <h4>Radius: {data?.result?.planetRadiusMi.toLocaleString()} Miles</h4>
+
+        <h4>Planet Type: {data?.result?.planetType === 'InnerRocky' ? 'Inner Rocky' :
+         data?.result?.planetType === 'GasGiant' ? 'Gas Giant' : 
+         data?.result?.planetType === 'IceGiant' ? 'Ice Giant' : 
+         data?.result?.planetType}</h4>
+
+        <h4>Distance from Sun: {data?.result?.distanceFromSunMi.toLocaleString()} Miles</h4>
     </div>
     {/*Facts*/}
     <div className={styles.row}>
