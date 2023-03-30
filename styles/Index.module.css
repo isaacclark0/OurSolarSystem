@@ -70,6 +70,16 @@
       }
   }
 
+  @keyframes rotate-pluto {
+    from {
+        transform: rotate(0deg)translateX(270px) rotate(0deg);
+      }
+      to {
+          transform: rotate(360deg)translateX(270px) rotate(-360deg);
+      }
+  }
+
+
   @keyframes hover-display-pulse {
     0% { opacity: 1; }
     50% { opacity: 0.6; }
@@ -81,8 +91,6 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 100vw;
-    height: 100vh;
   }
   
   .sun {
@@ -307,6 +315,31 @@
     border: 1px solid #ffffffb0;
   }
 
+  .pluto {
+    top: 258px;
+    left: 258px;
+    background-color: #9f8a7d;
+    animation: rotate-pluto 2480s linear infinite;
+    transform-origin: 50% 150%;
+  }
+
+  .plutoOutline {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:540px;
+    height:540px;
+    border: 1px solid #ffffff49;
+    border-radius: 50%;
+  }
+
+  .plutoOutline:hover {
+    cursor: pointer;
+    border: 1px solid #ffffffb0;
+  }
+
   .selectAPlanet {
     position: relative;
     text-transform: uppercase;
@@ -324,8 +357,14 @@
   }
 
   .theAnimation {
-    width: 600px;
-    height: 600px;
+    width: 550px;
+    height: 550px;
     position: relative;
+  }
+
+  .siteTitle {
+    text-align: center;
+    font-size: 55px;
+    font-family: pixelz;
   }
   

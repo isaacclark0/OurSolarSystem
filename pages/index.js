@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from 'next/link'
 import { HoverDisplay } from "@/components/HoverDisplay";
 import React, {useEffect, useState} from 'react'
@@ -10,13 +9,8 @@ const [hoverD, setHoverD] = useState("")
 
   return (
     <>
-      <Head>
-        <title>Solar System</title>
-        <meta name="description" content="Quckathon planet challenge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <div className={`${styles.solarsystem}`}>
+        <h1 className={styles.siteTitle}>Welcome Earthling</h1>
         <div className={styles.theAnimation}>
         <div onMouseOver={()=>setHoverD("SOL")} className={`${styles.sun}`}></div>
         <Link href="/planet/mercury">
@@ -57,6 +51,11 @@ const [hoverD, setHoverD] = useState("")
         <Link href="/planet/neptune">
         <div onMouseOver={()=>setHoverD("Neptune")} onMouseOut={()=>setHoverD("")} className={styles.neptuneOutline}>
           <div className={`${styles.planet} ${styles.neptune}`}></div>
+        </div>
+        </Link>
+        <Link href="/planet/pluto">
+        <div onMouseOver={()=>setHoverD("Pluto")} onMouseOut={()=>setHoverD("")} className={styles.plutoOutline}>
+          <div className={`${styles.planet} ${styles.pluto}`}></div>
         </div>
         </Link>
         </div>
