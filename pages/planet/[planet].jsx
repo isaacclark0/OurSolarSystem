@@ -25,7 +25,7 @@ export default function planet({path}) {
       {data?.result?.moons.length == 0 ? null :
       <div className="moonButton" onClick={()=>path}>
         {data?.result?.moons.length > 1 ? 'Moons ' : 'Moon '}
-        <div className="backArrow"> &gt;</div>
+        <div className="rightArrButton"> &gt;</div>
       </div>} 
     </div>
       <div className="container">
