@@ -12,7 +12,7 @@ export default function planet() {
   
 {/*fix this if you please, seems to load slow */}
   useMemo(()  =>  {
-    fetch(`http://localhost:3001/api/planet/${planet}`)
+    fetch(`http://localhost:3000/api/planet/${planet}`)
     .then(response => response.json())
     .then(data => setData(data))
   }, [planet])
