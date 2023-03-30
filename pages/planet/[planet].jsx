@@ -2,6 +2,7 @@ import { Planet } from "@/components/Planet"
 import { PlanetStats } from "@/components/PlanetStats"
 import { useRouter } from 'next/router'
 import React, {useState, useMemo} from 'react'
+import Link from "next/link"
 
 export default function planet() {
 

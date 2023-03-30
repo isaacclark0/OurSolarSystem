@@ -3,20 +3,16 @@ import styles from "../styles/PlanetsStats.module.css"
 export const PlanetStats = ({planet, data}) => {
 
     return <>
-    <div className={styles.planet}>
-
+    <div className={styles.pContainer}>
     <h2>{planet}</h2>
-
     <div className={styles.planetInfo}>
-        {/* <hr className="measurement"/> (Calculate With Radius) */}
-        <h4>Radius: {data?.result?.planetRadiusMi} Miles</h4>
+        <h4>Radius {data?.result?.planetRadiusMi.toLocaleString()} Miles</h4>
         <h4>Core: {data?.result?.planetType}</h4>
-        <h4>Distance from Sun: {data?.result?.distanceFromSunMi} Miles</h4>
+        <h4>{data?.result?.distanceFromSunMi.toLocaleString()} miles from Sun </h4>
     </div>
-    {/*Facts*/}
     <div className={styles.row}>
         {data?.result?.facts.map(b => (
-            <div className={styles.column}>
+            <div className={styles.factContainer}>
                 <p>{b.fact}</p>
             </div>
         ))}

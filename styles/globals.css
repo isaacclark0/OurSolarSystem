@@ -8,25 +8,37 @@
   src: url(../fonts/SIMPLIFICATypeface.ttf);
 }
 
+@font-face {
+  font-family: prof;
+  src: url(../fonts/Quicksand-Light.otf);
+}
+
 @keyframes twinkle {
 	50% {
 	  opacity: 1;
 	}
   }
 
+  @keyframes slowFadeForHover {
+    100% {
+      opacity: .5;
+    }
+    }
+
 html, body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 	margin: 0;
 	padding: 0;
 	overflow-x: hidden;
-	-ms-overflow-style: none; /* for Internet Explorer, Edge */
-	scrollbar-width: none; /* for Firefox */
+	-ms-overflow-style: none; 
+	scrollbar-width: none;
 	overflow-y: scroll; 
 }
   
   body {
 	background: black url('/images/starz.png') repeat;
-    width: 100vw;
-    height: 100vh;
   }
 
   body::-webkit-scrollbar {
@@ -45,10 +57,11 @@ html, body {
   }
 
 .container {
+  height: calc(100vh - 100px);
 	padding-top:100px;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 }
 
@@ -64,20 +77,20 @@ html, body {
   transform: rotate(-45deg);
 }
 
-.star:nth-child(2) {
+.star:nth-child(7) {
 	height: 0.32em;
 	width: 0.32em;
   top: 25%;
   left: 30%;
 }
-.star:nth-child(3) {
+.star:nth-child(8) {
 	height: 0.30em;
 	width: 0.30em;
   left: 75%;
   top: 40%;
   animation-delay: 0.2s;
 }
-.star:nth-child(4) {
+.star:nth-child(9) {
 	height: 0.34em;
 	width: 0.34em;
   left: 40%;
@@ -99,10 +112,67 @@ html, body {
   animation-delay: 0.1s;
 }
 
-.star:nth-child(6) {
+.star:nth-child(4) {
 	height: 0.28em;
 	width: 0.28em;
   left: 10%;
   top: 95%;
   animation-delay: 0.1s;
+}
+
+.navContainer {
+  padding:0 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(2px);
+  background-color: rgba(0, 0, 0, 0.151);
+  height:50px;
+  border-bottom: 1px solid #00000011 ;
+}
+
+.backButton {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  letter-spacing: 1px;
+  font-size: 18px;
+  width:80px;
+  font-family: simple;
+}
+
+.backButton:hover {
+cursor: pointer;
+animation: slowFadeForHover .2s;
+animation-fill-mode: forwards;
+}
+
+.backArrow {
+  margin-right:5px;
+  font-size: 25px;
+  display: inline-flex;
+}
+
+.footerContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height:50px;
+  backdrop-filter: blur(2px);
+  background-color: rgba(0, 0, 0, 0.151);
+}
+
+.footerContainer p{
+  letter-spacing: 1px;
+  color: #ffffffd7;
+  font-family: prof;
+  display: flex;
+  flex: 1 0;
+}
+
+.hackyExpander{
+  display: flex;
+  align-items: stretch;
+  flex: 1;
 }
