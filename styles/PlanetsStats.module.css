@@ -29,6 +29,11 @@
 	padding: 20px 4px;
 	border: 0px solid white;
   }
+  .rowItem {
+	border: 1px solid rgba(255, 255, 255, 0.151);
+	width: 52%;
+	padding: 8px;
+  }
   
   /* Create four equal columns that sits next to each other */
   .column {
