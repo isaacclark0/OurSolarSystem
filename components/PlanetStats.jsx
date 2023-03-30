@@ -7,10 +7,6 @@ export const PlanetStats = ({planet, data}) => {
     <h2>{planet}</h2>
     <div className={styles.planetInfo}>
 
-        <h4>Radius {data?.result?.planetRadiusMi.toLocaleString()} Miles</h4>
-        <h4>Core: {data?.result?.planetType}</h4>
-        <h4>{data?.result?.distanceFromSunMi.toLocaleString()} miles from Sun </h4>
-
         {/* <hr className="measurement"/> (Calculate With Radius) */}
         <h4>Radius: {data?.result?.planetRadiusMi.toLocaleString()} Miles</h4>
 
@@ -19,7 +15,7 @@ export const PlanetStats = ({planet, data}) => {
          data?.result?.planetType === 'IceGiant' ? 'Ice Giant' : 
          data?.result?.planetType}</h4>
 
-        <h4>Distance from Sun: {data?.result?.distanceFromSunMi.toLocaleString()} Miles</h4>
+        <h4>{data?.result?.distanceFromSunMi.toLocaleString()} miles from Sun</h4>
 
     </div>
     <div className={styles.row}>
