@@ -1,199 +1,198 @@
 .planetz {
-margin:30px;
-}
-
-.mars {
-  filter: blur(1px);
-  position: relative;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: #ff5733;
-  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 255, 255, 0.5);
-  z-index: 1;
-}
-
-.earth {
-  overflow:hidden;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: #0099cc;
-  position: relative;
-}
-
-.mercury {
-  filter: blur(1px);
-  overflow: hidden;
-  background-color: #d4d4d4;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  position: relative;
-  border: 10px solid #d4d4d4;
-}
-
-.venus {
-  filter: blur(1px);
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: #ffc0cb;
-  box-shadow: 0 0 20px #ffc0cb;
-}
-
-.jupiter {
-  filter: blur(1px);
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background: radial-gradient(circle, #f7d28c 0%, #d2853f 50%, #7e4c18 100%);
-  box-shadow: inset 0 0 20px rgba(0,0,0,0.2), 0 0 50px rgba(0,0,0,0.4);
-}
-
-.saturn {
-  filter: blur(1px);
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: #d1a456; 
-}
-
-.uranus {
-  filter: blur(1px);
-  position: relative;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: #84d7ff;
-  overflow: hidden;
-}
-
-.neptune {
-  filter: blur(1px);
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: #1b3c8a;
-  position: relative;
-  box-shadow: inset 0 0 40px rgba(255, 255, 255, 0.3);
-}
-
-.pluto {
-  filter: blur(1px);
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: #9f8a7d;
-  box-shadow: 0 0 30px rgba(0,0,0,0.5);
-}
-
-.uranus .outer {
-  filter: blur(7px);
-  position: absolute;
-  top: 80%;
-  left: 60%;
-  transform: translate(-50%, -50%);
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  background-color: #7ec6eb;
-  box-shadow: 0 0 0 20px #84d7ff;
-}
-
-.ring {
-  width: 135px;
-  height: 20px;
-  border-radius: 10px;
-  background-color: #76716e;
-  position: absolute;
-  top: 42px;
-  left: -17px;
-  transform: rotate(-30deg);
-  z-index: 2;
-}
-
-.crater {
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  border: 1px solid #1616163a;
-  border-radius: 50%;
-  background-color: #f3390f67;
-  z-index: 2;
-}
-
-.crater:nth-child(1) {
-  top: 40px;
-  left: 30px;
-}
-
-.crater:nth-child(2) {
-  width: 20px;
-  height: 20px;
-  top: 27.5px;
-  left: 65px;
-}
-
-.crater:nth-child(3) {
-  width: 5px;
-  height: 5px;
-  top: 70px;
-  left: 40px;
-}
-
-.northamerica {
-  width: 65px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: transparent;
-  border-top: 40px solid #006e12;
-  border-left: 25px solid transparent;
-  border-right: 25px solid transparent;
-  position: absolute;
-  top: 15px;
-  left:8px;
-  transform: rotate(20deg);
-}
-
-.southamerica {
-  width: 80px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: transparent;
-  border-top: 45px solid #006e12;
-  border-left: 28px solid transparent;
-  border-right: 28px solid transparent;
-  position: absolute;
-  top: 20%;
-  left: 60%;
-  transform: rotate(-100deg);
-}
-
-.centralamerica {
-  width: 50px;
-  height: 35px;
-  border-radius: 50%;
-  background-color: transparent;
-  border-top: 25px solid #006e12;
-  border-left: 28px solid transparent;
-  border-right: 28px solid transparent;
-  position: absolute;
-  top: 50px;
-  left: 15%;
-  transform: rotate(-98deg);
-}
-
-
-
-.mercury::before {
-  filter: blur(7px);
-  content: "";
-  position: absolute;
-  top: 20%;
-  left: 20%;
-  width: 60%;
-  height: 60%;
-  border-radius: 50%;
-  background-color: #b4b4b4;
-}
+  margin:30px;
+  }
+  
+  .mars {
+    filter: blur(1px);
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #ff5733;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 255, 255, 0.5);
+    z-index: 1;
+  }
+  
+  .earth {
+    overflow:hidden;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #0099cc;
+    position: relative;
+  }
+  
+  .mercury {
+    filter: blur(1px);
+    overflow: hidden;
+    background-color: #d4d4d4;
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    position: relative;
+    border: 10px solid #d4d4d4;
+  }
+  
+  .venus {
+    filter: blur(1px);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #ffc0cb;
+    box-shadow: 0 0 20px #ffc0cb;
+  }
+  
+  .jupiter {
+    filter: blur(1px);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #f7d28c 0%, #d2853f 50%, #7e4c18 100%);
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.2), 0 0 50px rgba(0,0,0,0.4);
+  }
+  
+  .saturn {
+    filter: blur(1px);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #d1a456; 
+  }
+  
+  .uranus {
+    filter: blur(1px);
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #84d7ff;
+    overflow: hidden;
+  }
+  
+  .neptune {
+    filter: blur(1px);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #1b3c8a;
+    position: relative;
+    box-shadow: inset 0 0 40px rgba(255, 255, 255, 0.3);
+  }
+  
+  .pluto {
+    filter: blur(1px);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #9f8a7d;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+  }
+  
+  .uranus .outer {
+    filter: blur(7px);
+    position: absolute;
+    top: 80%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #7ec6eb;
+    box-shadow: 0 0 0 20px #84d7ff;
+  }
+  
+  .ring {
+    width: 270px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #76716e;
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    transform: rotate(-30deg);
+    z-index: 2;
+  }
+  
+  .crater {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #1616163a;
+    border-radius: 50%;
+    background-color: #f3390f67;
+    z-index: 2;
+  }
+  
+  .crater:nth-child(1) {
+    top: 80px;
+    left: 60px;
+  }
+  
+  .crater:nth-child(2) {
+    width: 40px;
+    height: 40px;
+    top: 55px;
+    left: 130px;
+  }
+  
+  .crater:nth-child(3) {
+    width: 10px;
+    height: 10px;
+    top: 140px;
+    left: 80px;
+  }
+  
+  .northamerica {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: transparent;
+    border-top: 40px solid #006e12;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    position: absolute;
+    top: 15%;
+    transform: rotate(28deg);
+  }
+  
+  .southamerica {
+    width: 100px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: transparent;
+    border-top: 45px solid #006e12;
+    border-left: 28px solid transparent;
+    border-right: 28px solid transparent;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    transform: rotate(100deg);
+  }
+  
+  .centralamerica {
+    width: 100px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: transparent;
+    border-top: 45px solid #006e12;
+    border-left: 28px solid transparent;
+    border-right: 28px solid transparent;
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    transform: rotate(-90deg);
+  }
+  
+  
+  
+  .mercury::before {
+    filter: blur(7px);
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+    background-color: #b4b4b4;
+  }
