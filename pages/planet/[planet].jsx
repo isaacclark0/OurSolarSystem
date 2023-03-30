@@ -20,8 +20,8 @@ export default function planet() {
 
     return (
     <div className="container">
-    <Planet planet={planet} />
-    <PlanetStats planet={planet} data={data}/>
+        <Planet planet={planet} />
+        <PlanetStats planet={planet} data={data} />
     </div>
     )
 

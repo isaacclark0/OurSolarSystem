@@ -24,7 +24,7 @@ export const PlanetStats = ({planet, data}) => {
             </div>
         ))}
     </div>
-    
+
     {/*Moons
     <div className={styles.row}>
         {data?.result?.moons.map(b => (
