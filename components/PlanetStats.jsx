@@ -25,17 +25,6 @@ export const PlanetStats = ({planet, data}) => {
         ))}
     </div>
 
-    {/*Moons
-    <div className={styles.row}>
-        {data?.result?.moons.map(b => (
-            <div className={styles.column}>
-                <h1>{b.moonname}</h1>
-                <b>{b.moonRadiusMi} Mile Radius</b>
-                <p>{b.moonhistory}</p>
-            </div>
-        ))}
-    </div>*/}
-
 </div>
     </>
 }
