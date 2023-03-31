@@ -21,6 +21,10 @@ export const Nav = ({path}) => {
         <div className="backButton" onClick={()=>path.back()}><div className="backArrow">&lt;</div> Back</div>
     )
 
+    const solarSystem = (
+        <div className="backButton" onClick={()=>path.push('/')}><div className="backArrow">&lt;</div> Solar System</div>
+    )
+
     const moonsButton = (
         <Link href={`/planet/${planet}/moon-info`}>
         <div className="moonButton">Moons <div className="forwardArrow">&gt;</div></div>
@@ -33,7 +37,7 @@ export const Nav = ({path}) => {
     }
 
     const setPlanet = () => {
-        setLeftButton(backButton)
+        setLeftButton(solarSystem)
         setRightButton(moonsButton)
     }
 
