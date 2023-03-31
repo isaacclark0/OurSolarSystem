@@ -8,7 +8,7 @@ const moon = () => {
     const [data, setData] = useState(null);
 
     useMemo(()  =>  {
-        fetch(`http://localhost:3000/api/planet/${planet}`)
+        fetch(`https://planetz.lol/api/planet/${planet}`)
         .then(response => response.json())
         .then(data => setData(data))
       }, [planet])
