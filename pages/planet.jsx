@@ -1,3 +1,5 @@
+import UniqueFacts from "../components/UniqueFacts"
+
 export default function About() {
     return (
     <>
@@ -5,24 +7,14 @@ export default function About() {
         <div id="planetIcon"></div>
         <h2>Earth</h2>
 
-        <div className="planetInfo ">
-            {/* <hr className="measurement"/> */}
+        <div className="planetInfo">
+            <div></div>
             <h4>Size:________</h4>
             <h4>The Core of Earth is: ______</h4>
             <h4>Distance from the Sun: _____</h4>
         </div>
 
-        <div className="row">
-            <div className="column">
-                <p>liquid water</p>
-            </div>
-            <div className="column">
-                 <p>plate tectonics</p>
-            </div>
-            <div className="column">
-                 <p>an atmosphere that shelters it from the worst of the sun's rays.</p>
-             </div>
-        </div>
+        <UniqueFacts />
 
     </div>
 
