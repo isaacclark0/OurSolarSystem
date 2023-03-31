@@ -26,6 +26,7 @@
   
   .row {
 	display: flex;
+	align-items: center;
 	flex-direction: column;
 	justify-content: space-between;
 	padding-bottom: 100px;
@@ -34,16 +35,30 @@
   }
   
   .factContainer {
-	text-align: center;
+	text-align:left;
 	font-size: 14px;
 	font-family: prof;
-	min-width: 420px;
+	color: rgb(0, 0, 0);
 	padding: 20px 4px;
-	margin-top:20px;
-	border: 0px solid rgba(255, 255, 255, 0.151);
-	flex:1;
+	background-color: rgba(0, 0, 0, 0.151);
+	backdrop-filter: blur(2px);
+	
+	margin-top: 20px;
+	width:720px;
+	box-shadow: rgba(255, 255, 255, 0.07) 0px 4px 9px, rgba(255, 255, 255, 0.07) 0px 2px 2px;
+	border-radius: 20px;
   }
-  
+  .factContainer p{
+	color: white;
+	width: 95%;
+	padding-left: 10px;
+  }
+  @media screen and (max-width: 750px) {
+	.factContainer{
+	   width: 90%;
+	}
+}
+
   hr.measurement {
 	border-color: black;
 	border-top: 1px dashed red;
@@ -61,3 +76,4 @@
 	justify-content: space-between;
 	height:100%;
   }
+  
