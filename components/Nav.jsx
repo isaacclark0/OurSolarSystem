@@ -38,8 +38,6 @@ export const Nav = ({path}) => {
         setRightButton(null)
     }
 
-    console.log(path)
-
 useEffect(() => {
     path.pathname === "/" ? setIndex() :
     path.pathname === "/planet/[planet]" && path.query.planet ? setPlanet() :
