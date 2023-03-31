@@ -12,13 +12,6 @@ export default function planet({data}) {
 
     return (
     <>
-    <div className="moonb">
-      {data?.result?.moons.length == 0 ? null :
-      <Link href={`/planet/${planet}/moon-info`} className="moonButton">
-        {data?.result?.moons.length > 1 ? 'Moons ' : 'Moon '}
-        <div className="rightArrButton"> &nbsp;&gt;</div>
-      </Link>} 
-    </div>
       <div className="container">
         <Planet planet={planet} />
         <PlanetStats planet={planet} data={data}/>
@@ -27,16 +20,17 @@ export default function planet({data}) {
     )
 
   }
+
 export const getStaticPaths = async () => {
 
     return {
-        paths: [], //indicates that no page needs be created at build time
-        fallback: 'blocking' //indicates the type of fallback
+        paths: [], 
+        fallback: 'blocking'
     }
 }
-  // This function gets called at build time
+
 export async function getStaticProps({params}) {
-  // Call an external API endpoint to get posts
+
   const res = await fetch(`http://localhost:3000/api/planet/${params.planet}`)
   const data = await res.json()
 
