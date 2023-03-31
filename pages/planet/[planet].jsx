@@ -3,6 +3,7 @@ import { PlanetStats } from "@/components/PlanetStats"
 import { useRouter } from 'next/router'
 import React, {useState, useEffect} from 'react'
 import { useSwipeable } from 'react-swipeable';
+import Link from "next/link";
 
 export default function planet({data}) {
 
@@ -84,6 +85,8 @@ export default function planet({data}) {
     return (
     <>
       <div {...handlers} className="container">
+        <div onClick={()=>previousPlanet()} className="leftySwipe">&lt;</div>
+        <div onClick={()=>nextPlanet()}className="rightySwipe">&gt;</div>
         <Planet planet={planet} />
         <PlanetStats planet={planet} data={data}/>
       </div>
