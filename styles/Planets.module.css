@@ -11,6 +11,7 @@
 }
 
 .planetz {
+  z-index: 420420;
   margin:30px;
   animation: 5s float linear infinite;
   }

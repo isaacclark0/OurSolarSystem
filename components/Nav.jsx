@@ -13,6 +13,10 @@ export const Nav = ({path}) => {
         <Image src="/android-chrome-192x192.png" width={50} height={50} />
     )
 
+    const git = (
+        <Link href="https://github.com/isaacclark0/OurSolarSystem" target="_blank"><div className="gittyKitty" onClick={()=>path.back()}><Image src="/images/gittyKitty.png" width={40} height={40}/></div></Link>
+    )
+
     const backButton = (
         <div className="backButton" onClick={()=>path.back()}><div className="backArrow">&lt;</div> Back</div>
     )
@@ -25,7 +29,7 @@ export const Nav = ({path}) => {
 
     const setIndex = () => {
         setLeftButton(logo)
-        setRightButton(null)
+        setRightButton(git)
     }
 
     const setPlanet = () => {

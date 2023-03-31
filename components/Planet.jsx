@@ -17,6 +17,7 @@ useEffect(() => {
   planet === "saturn" ? toggleRings("ring") : toggleRings(null)
 }, [planet])
 
+
 useEffect(() => {
   const enableEarth = (isEarth) => {
     if(isEarth){

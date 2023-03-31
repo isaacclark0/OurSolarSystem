@@ -17,6 +17,9 @@ useEffect(() => {
   router.pathname === "/planet/[planet]" && router.query.planet ? setTitle(titlePrefix + router.query.planet.slice(0, 1).toUpperCase() + router.query.planet.slice(1)) : setTitle("PLANETZ.LOL")
 }, [router])
 
+  const dummyArrows = (
+    <><div className="leftySwipe">&lt;</div><div className="rightySwipe">&gt;</div></>
+  )
 
   return <>
     <Head>
@@ -34,7 +37,8 @@ useEffect(() => {
       <meta name="theme-color" content="#ffffff" />
     </Head>
     <Nav path={router}/>
-    <Component {...pageProps} />
+    {router.pathname === "/planet/[planet]" ? dummyArrows : null}
+    <Component path={router} {...pageProps} />
     <Footer/>
     <div className="starConatin">
     <div className="star"></div>
