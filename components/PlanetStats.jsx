@@ -19,7 +19,7 @@ export const PlanetStats = ({planet, data}) => {
     </div>
     <div className={styles.row}>
         {data?.result?.facts.map(b => (
-            <div className={styles.factContainer}>
+            <div key={Math.random()} className={styles.factContainer}>
                 <p>{b.fact}</p>
             </div>
         ))}

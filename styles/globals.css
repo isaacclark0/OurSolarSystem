@@ -77,34 +77,34 @@ html, body {
   transform: rotate(-45deg);
 }
 
-.star:nth-child(7) {
+.star:nth-child(1) {
 	height: 0.32em;
 	width: 0.32em;
   top: 25%;
   left: 30%;
 }
-.star:nth-child(8) {
+.star:nth-child(2) {
 	height: 0.30em;
 	width: 0.30em;
   left: 75%;
   top: 40%;
   animation-delay: 0.2s;
 }
-.star:nth-child(9) {
+.star:nth-child(3) {
 	height: 0.34em;
 	width: 0.34em;
   left: 40%;
   top: 75%;
   animation-delay: 0.1s;
 }
-.star:nth-child(5) {
+.star:nth-child(4) {
 	height: 0.36em;
 	width: 0.36em;
   left: 95%;
   top: 95%;
   animation-delay: 0.3s;
 }
-.star:nth-child(6) {
+.star:nth-child(5) {
 	height: 0.28em;
 	width: 0.28em;
   left: 10%;
@@ -112,7 +112,7 @@ html, body {
   animation-delay: 0.1s;
 }
 
-.star:nth-child(4) {
+.star:nth-child(6) {
 	height: 0.28em;
 	width: 0.28em;
   left: 10%;
@@ -133,47 +133,15 @@ html, body {
 }
 
 .backButton {
+  height:50px;
   display: inline-flex;
   flex-direction: row;
   align-items: center;
   letter-spacing: 1px;
-  font-size: 18px;
+  font-size: 25px;
   width:80px;
   font-family: simple;
 }
-.moonb{
-  width: 100%;
-  display: flex;
-  flex-direction:row;
-  justify-content: flex-end;
-  margin-top: 20px;
-  height: 28px;
-}
-.moonButton {
-  display: inline-flex;
-  flex-direction: row;
-  align-items: center;
-  letter-spacing: 1px;
-  font-size: 28px;
-  width:80px;
-  font-family: simple;
-  margin-right: 30px;
-}
-.rightArrButton {
-  display: inline-flex;
-  flex-direction: row;
-  align-items: center;
-  letter-spacing: 1px;
-  font-size: 38px;
-  margin-top: 3px;
-  width:80px;
-  font-family: simple;
-}
-.moonButton:hover {
-  cursor: pointer;
-  animation: slowFadeForHover .2s;
-  animation-fill-mode: forwards;
-  }
 
 .backButton:hover {
 cursor: pointer;
@@ -182,12 +150,36 @@ animation-fill-mode: forwards;
 }
 
 .backArrow {
-  margin-right:5px;
+  margin-right:10px;
+  font-size: 40px;
+  display: inline-flex;
+}
+
+.moonButton {
+  height:50px;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  letter-spacing: 1px;
   font-size: 25px;
+  width:80px;
+  font-family: simple;
+}
+
+.moonButton:hover {
+cursor: pointer;
+animation: slowFadeForHover .2s;
+animation-fill-mode: forwards;
+}
+
+.forwardArrow {
+  margin-left:10px;
+  font-size: 40px;
   display: inline-flex;
 }
 
 .footerContainer {
+  border-top: 1px solid #00000011 ;
   margin-bottom:auto;
   align-items: center;
   display: flex;

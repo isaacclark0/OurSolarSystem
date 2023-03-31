@@ -87,9 +87,10 @@
   }
 
 .solarsystem {
-  min-height: 100vh;
+    min-height: calc(100vh - 100px);
     align-items: center;
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     position: relative;
   }

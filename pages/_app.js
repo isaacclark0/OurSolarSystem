@@ -36,11 +36,13 @@ useEffect(() => {
     <Nav path={router}/>
     <Component {...pageProps} />
     <Footer/>
+    <div className="starConatin">
     <div className="star"></div>
     <div className="star"></div>
     <div className="star"></div>
     <div className="star"></div>
     <div className="star"></div>
     <div className="star"></div>
+    </div>
   </>
 }
