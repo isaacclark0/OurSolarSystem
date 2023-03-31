@@ -105,7 +105,7 @@ export const getStaticPaths = async () => {
 
 export async function getStaticProps({params}) {
 
-  const res = await fetch(`https://planetz.lol/api/planet/${params.planet}`)
+  const res = await fetch(`http://localhost:3000/api/planet/${params.planet}`)
   const data = await res.json()
 
   return {
