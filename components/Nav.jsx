@@ -14,7 +14,7 @@ export const Nav = ({path}) => {
     )
 
     const git = (
-        <Link href="https://github.com/isaacclark0/OurSolarSystem" target="_blank"><div className="gittyKitty" onClick={()=>path.back()}><Image src="/images/gittyKitty.png" width={40} height={40}/></div></Link>
+        <Link href="https://github.com/isaacclark0/OurSolarSystem" target="_blank"><div className="gittyKitty"><Image src="/images/gittyKitty.png" width={40} height={40}/></div></Link>
     )
 
     const backButton = (
