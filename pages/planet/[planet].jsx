@@ -30,25 +30,25 @@ export default function planet({data}) {
   
   const nextPlanet = () => {
     if (position.current !== 8) {
-    setCss1("animate__animated animate__slideOutLeft")
-    setTimeout(() => {
+    setCss1("animate__animated animate__slideOutLeft animate__faster")
+
       router.push(`${planetArray[position.next]}`)
-    }, "400");
+
     setTimeout(() => {
-      setCss1("animate__animated animate__slideInRight")
-    }, "800");
+      setCss1("animate__animated animate__slideInRight animate__faster")
+    }, "500");
   }
   }
   
   const previousPlanet = () => {
     if (position.current !== 0) {
-      setCss1("animate__animated animate__slideOutRight")
-      setTimeout(() => {
+      setCss1("animate__animated animate__slideOutRight animate__faster")
+
         router.push(`${planetArray[position.previous]}`)
-      }, "400");
+
       setTimeout(() => {
-        setCss1("animate__animated animate__slideInLeft")
-      }, "800");
+        setCss1("animate__animated animate__slideInLeft animate__faster")
+      }, "500");
     } 
   }
   
