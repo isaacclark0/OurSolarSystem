@@ -3,7 +3,6 @@ import { PlanetStats } from "@/components/PlanetStats"
 import { useRouter } from 'next/router'
 import React, {useState, useEffect} from 'react'
 import { useSwipeable } from 'react-swipeable';
-import Link from "next/link";
 
 export default function planet({data}) {
 
@@ -30,11 +29,27 @@ export default function planet({data}) {
   })
   
   const nextPlanet = () => {
-    position.current === 8 ? null : router.push(`${planetArray[position.next]}`)
+    if (position.current !== 8) {
+    setCss1("animate__animated animate__slideOutLeft")
+    setTimeout(() => {
+      router.push(`${planetArray[position.next]}`)
+    }, "400");
+    setTimeout(() => {
+      setCss1("animate__animated animate__slideInRight")
+    }, "800");
+  }
   }
   
   const previousPlanet = () => {
-    position.current === 0 ? null : router.push(`${planetArray[position.previous]}`)
+    if (position.current !== 0) {
+      setCss1("animate__animated animate__slideOutRight")
+      setTimeout(() => {
+        router.push(`${planetArray[position.previous]}`)
+      }, "400");
+      setTimeout(() => {
+        setCss1("animate__animated animate__slideInLeft")
+      }, "800");
+    } 
   }
   
   const handlers = useSwipeable({
@@ -82,9 +97,19 @@ export default function planet({data}) {
   }
   }, [planet])
 
+const [css1, setCss1] = useState("")
+const [css2, setCss2] = useState("opacityZero")
+
+useEffect(() => {
+  setCss2("container")
+  setCss1("animate__animated animate__fadeIn")
+}, [])
+
+
+
     return (
     <>
-      <div {...handlers} className="container">
+      <div {...handlers} className={`${css1} ${css2}`}>
         <div onClick={()=>previousPlanet()} className="leftySwipe">&lt;</div>
         <div onClick={()=>nextPlanet()}className="rightySwipe">&gt;</div>
         <Planet planet={planet} />

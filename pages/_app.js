@@ -2,6 +2,7 @@ import Head from "next/head";
 import React, {useEffect, useState} from "react";
 import { useRouter } from "next/router";
 import '@/styles/globals.css'
+import 'animate.css';
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 

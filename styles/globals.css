@@ -262,3 +262,7 @@ transform: scale(1.05,1.05);
   transition: 0.2s;
 }
 
+.opacityZero {
+  opacity: 0;
+}
+
