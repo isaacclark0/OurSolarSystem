@@ -31,9 +31,9 @@ export default function planet({data}) {
   const nextPlanet = () => {
     if (position.current !== 8) {
     setCss1("animate__animated animate__slideOutLeft animate__faster")
-
+    setTimeout(() => {
       router.push(`${planetArray[position.next]}`)
-
+    }, "250");
     setTimeout(() => {
       setCss1("animate__animated animate__slideInRight animate__faster")
     }, "500");
@@ -43,9 +43,9 @@ export default function planet({data}) {
   const previousPlanet = () => {
     if (position.current !== 0) {
       setCss1("animate__animated animate__slideOutRight animate__faster")
-
+      setTimeout(() => {
         router.push(`${planetArray[position.previous]}`)
-
+      }, "250");
       setTimeout(() => {
         setCss1("animate__animated animate__slideInLeft animate__faster")
       }, "500");
