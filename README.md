@@ -66,12 +66,12 @@ Similarly, the planet information component receives the planet as a prop, in ad
 Our personal Debian server hosts and stores all the data, using the PostgreSQL database engine. To retrieve information from the database without creating a full backend API, we utilize Prisma in conjunction with the server-side rendering capabilities of NextJS. This integrated approach enables unified database connection and information retrieval within NextJS, while keeping the database connection information secure.
 ## 🤝 Our Team
 
-**Isaac.sc** - *Backend database deployment & Frontend CSS*   
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/isaac-clark-b41028219/)
-
-**GoryIceCream** - *Frontend CSS*   
+**GoryIceCream** - *Frontend design   
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/angelika-selviyan-46378b196/)
 
-**VulcanBearBull** - *Backend server deployment & Frontend CSS*   
+**Isaac.sc** - *Database deployment/configuration, API design, Frontend design  
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/isaac-clark-b41028219/)
+
+**VulcanBearBull** - *Backend server deployment/configuration, DNS/Domain configuration, Frontend design  
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alexander-charbonneau-202714215/)
 
