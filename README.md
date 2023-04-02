@@ -59,7 +59,7 @@ The planet page consists of two components. One for the planet itself and one fo
 
 The planet component accepts a single prop - a string that specifies the name of the planet to be displayed. The component uses this prop to apply the prop string to the planet's CSS selector. Thus displaying whatever planet is passed as a prop.
 
-Similarly, the planet information component receives the planet as a prop, in addition to data from the database. To ensure a seamless user experience, all data is preloaded from the database using getStaticProps.
+Similarly, the planet information component receives the planet as a prop, in addition to data from the database. To ensure a seamless user experience, all data is preloaded from the database using [getStaticProps](https://nextjs.org/docs/basic-features/data-fetching/get-static-props).
 
 **All planet and moon content MUST be stored in a database**
 
