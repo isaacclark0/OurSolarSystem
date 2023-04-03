@@ -1,7 +1,7 @@
 .moonContainer {
     padding-top: 50px;
     padding-bottom: 50px;
-      display: flex;
+    display: flex;
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;

@@ -6,6 +6,7 @@ const moon = () => {
     const router = useRouter()
     const {planet} = router.query
     const [data, setData] = useState(null);
+    const [css,setCss] = useState("opacityZero")
 
     useMemo(()  =>  {
         fetch(`https://planetz.lol/api/planet/${planet}`)
@@ -14,13 +15,13 @@ const moon = () => {
       }, [planet])
 
       useEffect(() => {
-        console.log(data?.result?.moons)
+      setCss("animate__animated animate__fadeIn")
       }, [data])
       
 
   return (
     <>
-    <div className={styles.moonContainer}>
+    <div className={`${styles.moonContainer} ${css}`}>
     {data?.result?.moons?.map(b => (
         <Moon name={b.moonname} radius={b.moonRadiusMi} history={b.moonhistory}/>
     ))}
