@@ -16,6 +16,7 @@ export default function App({ Component, pageProps }) {
 useEffect(() => {
   router.pathname === "/" ? setTitle(titlePrefix + "Solar System") :
   router.pathname === "/planet/[planet]" && router.query.planet ? setTitle(titlePrefix + router.query.planet.slice(0, 1).toUpperCase() + router.query.planet.slice(1)) : setTitle("PLANETZ.LOL")
+  router.pathname === "/planet/[planet]/moon-info" && router.query.planet ? setTitle(titlePrefix + router.query.planet.slice(0, 1).toUpperCase() + router.query.planet.slice(1) + "'s moons") : null
 }, [router])
 
   return <>
