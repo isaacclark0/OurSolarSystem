@@ -24,8 +24,17 @@
   }
   .moonCard:hover {
     cursor: pointer;
-    
   }
   .moonImg{
     width: 220px;
+  }
+
+.noMoons{
+  font-size: 20px;
+  font-family: prof;
+  text-shadow: 0px 0px 20px #fffffff1;
+}
+
+  .displayNone {
+    display:none
   }
