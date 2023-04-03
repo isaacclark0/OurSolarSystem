@@ -349,6 +349,7 @@
     letter-spacing: 10px;
     font-family: simple;
     margin-bottom:0;
+    color: #ffffff;
   }
 
   .hoverDisplay {
@@ -366,6 +367,7 @@
   }
 
   .siteTitle {
+    color: #ffffff;
     text-align: center;
     font-size: 42px;
     font-family: pixelz;
