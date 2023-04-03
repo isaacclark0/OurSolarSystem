@@ -353,6 +353,7 @@
   }
 
   .hoverDisplay {
+    color: #ffffff;
     height: 50px;
     letter-spacing: 10px;
     font-family: pixelz;
