@@ -1,15 +1,15 @@
 
-# 🔗 [PLANETZ.LOL](https://planetz.lol) 🔗
+# 🔗 [PLANETZ.LOL](https://planetz.lol)
 
 PLANETZ.LOL is a SPA (Single Page Application) that educates the user not only on the planets in our solar system but their moons as well. The project was created for the [Dear Junior Dev Discord Server](https://discord.gg/J4dQxyAFqC) weekly quackathon!
 
 
-## 🖼 Screenshot 🖼
+## 🖼 Screenshot
 
 ![App Screenshot](https://tinypic.host/images/2023/04/02/Untitled.jpg)
 
 
-## ⌨ Deployment ⌨
+## ⌨ Deployment
   
 **_NOTE:_** The following project was built with nodeJS. Please install nodeJS LTS before continuing with deployment instructions!
 
@@ -32,14 +32,14 @@ To start the server
 ```
 
 
-## 🖥 Tech Stack 🖥
+## 🖥 Tech Stack
 
 **Client:** NextJS, React, Prisma, Animate.css, react-swipeable, Sharp
 
 **Server:** Debian, NGINX, PostgreSQL, NextJS
 
 
-## ✅ Challenge Requirements ✅
+## ✅ Challenge Requirements
 
 **Each planet of the solar system must have its own profile page**  
 
@@ -65,7 +65,7 @@ Similarly, the planet information component receives the planet as a prop, in ad
 
 Our personal Debian server hosts and stores all the data, using the PostgreSQL database engine. To retrieve information from the database without creating a full backend API, we utilize Prisma in conjunction with the server-side rendering capabilities of NextJS. This integrated approach enables unified database connection and information retrieval within NextJS, while keeping the database connection information secure.  
 
-## 🤝 Our Team 🤝
+## 🤝 Our Team
 
 **GoryIceCream** - *Frontend design*   
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/angelika-selviyan-46378b196/)
