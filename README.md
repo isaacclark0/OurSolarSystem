@@ -1,5 +1,5 @@
 
-# PLANETZ.LOL
+# [PLANETZ.LOL](https://planetz.lol)
 
 PLANETZ.LOL is a SPA (Single Page Application) that educates the user not only on the planets in our solar system but their moons as well. The project was created for the [Dear Junior Dev Discord Server](https://discord.gg/J4dQxyAFqC) weekly quackathon!
 
