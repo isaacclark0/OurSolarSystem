@@ -6,7 +6,7 @@ PLANETZ.LOL is a SPA (Single Page Application) that educates the user not only o
 
 ## 🖼 Screenshot
 
-![App Screenshot](https://tinypic.host/images/2023/04/02/Untitled.jpg)
+![image](https://user-images.githubusercontent.com/118412831/231932641-91395790-a7c1-46c7-9ef8-29cdb2fd6afc.png)
 
 
 ## ⌨ Deployment
